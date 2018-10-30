@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dojo Fuit Store</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <div id="container">
+            <h2>Thanks for your order!</h2>
+            <h4>You ordered {{ anything }} total fruits @</h4>
+            <div class="box1">
+                <p class="p1">Fruit Name</p>
+                <p class="p2">Strawberry</p>
+                <p class="p2">Raspberry</p>
+                <p class="p2">Apple</p>
+            </div>
+            <form action="/checkout" method="post">
+                <div class="box2">
+                    <p class="p1">Quantity</p>
+                    <span>{{ request.form['strawberry'] }}</span>
+                    <span>{{ request.form['raspberry'] }}</span>
+                    <span>{{ request.form['apple'] }}</span>
+                </div>
+                <h4 id="h4only">Your Information</h4>
+                <div id="info">
+                    <p class="pinfo1">Name:</p>
+                    <h5>{{ request.form['fullname'] }}</h5>
+                    <br>
+                    <p class="pinfo2">Your Student ID:</p>
+                    <h5>{{ request.form['studentID'] }}</h5>
+                    <br>
+                    <form action="/">
+                        <button type="submit" id ="back">Back</button>
+                    </form>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

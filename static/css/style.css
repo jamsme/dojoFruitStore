@@ -1,0 +1,80 @@
+body {
+    padding-top: 50px;
+}
+#container {
+    width: 970px;
+    margin: 0 0 0 45px;
+    background-color: rgb(228, 223, 214);
+    border-radius: 6px;
+    padding: 5px 0 15px 20px;
+    border: 1px solid;
+}
+.box1 {
+    width: 300px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+}
+p.p1 {
+    margin: 0;
+    height: 23px;
+    padding: 5px 0 0 2px;
+    background-color: rgb(190, 178, 178);
+}
+p.p2 {
+    margin: 0;
+    height: 23px;
+    padding: 5px 0 0 2px;
+    background-color: bisque;
+}
+.box2 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 246px;
+    margin-left: -7px;
+    background-color: bisque;
+    border-radius: 3px;
+}
+form {
+    display: inline-block;
+}
+select {
+    display: block;
+    margin: 6px 0 8px 5px;
+}
+h4 {
+    text-decoration: underline;
+}
+#h4only {
+    position: relative;
+    left: -306px;
+    display: block;
+    margin: 20px 0 0 0;
+}
+input {
+    width: 200px;
+}
+p.pinfo1 {
+    margin: 5px 296px 5px -305px;
+    display: inline-block;
+}
+p.pinfo2 {
+    display: inline-block;
+    margin: 0 230px 0 -306px;
+}
+button {
+    margin: 10px 0 0 144px;
+    width: 100px;
+    height: 23px;
+    border-radius: 6px;
+}
+h5 {
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+span {
+    display: block;
+    margin: 6px 0 8px 5px;
+}
